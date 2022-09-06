@@ -1,0 +1,21 @@
+.button {
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    padding: 12px 24px;
+    background: linear-gradient(90deg, var(--Blue, #17ddd0) /* {"name":"Blue"} */ 0%, hsl(176, 85%, 34%) 100%);
+    overflow: hidden;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 10;
+    border-radius: 100px;
+    border-color: #0e8179;
+    border-style: solid;
+    border-top-width: 0px;
+    border-bottom-width: 4px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    color: #fff;
+    font-weight: 500;
+}
