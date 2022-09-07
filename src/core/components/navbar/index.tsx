@@ -2,7 +2,7 @@ import * as React from 'react';
 import { HureLogo } from '../../resources/logo';
 import { BurgerBtn } from '../burger/burgerBtn';
 import { Button } from '../button/button';
-import NavBarStyles from './styles/Navbar.module.scss';
+import NavBarStyles from './styles/navbar.module.scss';
 
 interface NavbarProps {}
 
