@@ -11,7 +11,7 @@ export const Navbar: React.FunctionComponent<NavbarProps> = () => {
         <nav className={`${NavBarStyles.navbar} sm:w-full`}>
             <HureLogo />
             <div className={`${NavBarStyles.navbar__menu}`}>
-                <div className={`${NavBarStyles.navbar__menu__item}`}>
+                <div className={`${NavBarStyles.navbar__menu__item} hidden sm:block`}>
                     <Button>Connect Wallet</Button>
                 </div>
                 <div className={`${NavBarStyles.navbar__menu__item}`}>

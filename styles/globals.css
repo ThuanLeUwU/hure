@@ -14,3 +14,52 @@
 .text-cyan {
     color:#17ddd0
 }
+
+.hidden {
+    display: none;
+}
+
+
+
+.block {
+    display: block;
+}
+
+
+
+
+
+.flex {
+    display: flex;
+}
+
+
+
+@media (min-width:1024px ) {
+    .lg\:flex  {
+        display: flex;
+    }
+
+   .lg\:block {
+        display: block;
+    }
+
+    .lg\:hidden {
+        display: none;
+    }
+}
+
+@media (min-width:640px) {
+   .sm\:flex {
+        display: flex;
+    }
+
+    .sm\:block {
+        display: block;
+    }
+
+    .sm\:hidden {
+        display: none;
+    }
+}
+    
