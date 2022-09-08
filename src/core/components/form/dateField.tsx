@@ -16,9 +16,9 @@ export const DateField: React.FC<DateFieldProps> = ({ name, label, ...rest }) =>
             <label htmlFor={name}>{label}</label>
             <input {...register(name)} {...rest} type="date" />
             {Boolean(errors[name]?.message) && (
-                <div>
+                <>
                     {label} {errors[name]?.message}
-                </div>
+                </>
             )}
         </div>
     );
