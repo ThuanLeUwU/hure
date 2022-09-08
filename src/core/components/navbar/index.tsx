@@ -1,21 +1,20 @@
 import * as React from 'react';
-import { HureLogo } from '../../resources/logo';
-import { BurgerBtn } from '../burger/burgerBtn';
-import { Button } from '../button/button';
 import NavBarStyles from './styles/Navbar.module.scss';
 
 interface NavbarProps {}
 
 export const Navbar: React.FunctionComponent<NavbarProps> = () => {
     return (
-        <nav className={`${NavBarStyles.navbar} sm:w-full`}>
-            <HureLogo />
-            <div className={`${NavBarStyles.navbar__menu}`}>
-                <div className={`${NavBarStyles.navbar__menu__item} hidden sm:block`}>
-                    <Button>Connect Wallet</Button>
-                </div>
-                <div className={`${NavBarStyles.navbar__menu__item}`}>
-                    <BurgerBtn />
+        <nav className={`${NavBarStyles.navbar}`}>
+            <p className={`${NavBarStyles.navbar_logo} `}>
+                <span className="text-white">HU</span>
+                <span className="text-cyan">RE</span>
+            </p>
+            <div className={`${NavBarStyles.navbar_burger}`}>
+                <div className={`${NavBarStyles.navbar_burger_lines}`}>
+                    <span className={`${NavBarStyles.navbar_burger_line}`}></span>
+                    <span className={`${NavBarStyles.navbar_burger_line}`}></span>
+                    <span className={`${NavBarStyles.navbar_burger_line}`}></span>
                 </div>
             </div>
         </nav>

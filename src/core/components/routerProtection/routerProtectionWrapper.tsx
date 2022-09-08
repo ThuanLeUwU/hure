@@ -1,10 +1,11 @@
+import { PropsOf } from '@headlessui/react/dist/types';
 import { useRouter } from 'next/router';
 import * as React from 'react';
 import { UserRole } from '../../models/user';
 import { routes } from '../../routes';
 import { useStoreUser } from '../../store';
 
-interface RouterProtectionWrapperProps {
+interface RouterProtectionWrapperProps extends React.PropsWithChildren{
     acceptRoles: Array<UserRole>;
 }
 
