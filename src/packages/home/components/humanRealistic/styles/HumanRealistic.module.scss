@@ -117,7 +117,7 @@
     height: 200px;
     // overflow: hidden;
     opacity: 0.2;
-    background-image: url(../../../../../public/asset/images/background.jpg);
+    background-image: url(./../../../../../../public/asset/images/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -128,19 +128,19 @@
     // height: 213px;
     // margin-top: 50px;
     overflow: visible;
-    background-image: url(../../../../../public/asset/images/otHUdQl2uqrgeAnsVtJzdMYJi6o.webp);
+    background-image: url(./../../../../../../public/asset/images/otHUdQl2uqrgeAnsVtJzdMYJi6o.webp);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .video {
-        width: 100%;
-        border-radius: 16px;
-        display: block;
-        object-fit: cover;
-        background-color: rgba(0, 0, 0, 0);
-        object-position: 50% 50%;
+    width: 100%;
+    border-radius: 16px;
+    display: block;
+    object-fit: cover;
+    background-color: rgba(0, 0, 0, 0);
+    object-position: 50% 50%;
 }
 
 @media only screen and (max-width: 640px) {
