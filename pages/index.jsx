@@ -1,7 +1,6 @@
-import type { NextPage } from 'next';
 import { Home } from '../src/packages/home/containers/home';
 
-const HomePage: NextPage = () => {
+const HomePage = () => {
     return (
         <div>
             <Home />

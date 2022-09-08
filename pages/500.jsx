@@ -1,8 +1,6 @@
 import * as React from 'react';
 
-interface ErrorPageProps {}
-
-const ErrorPage: React.FC<ErrorPageProps> = () => {
+const ErrorPage = () => {
     return <div>error page</div>;
 };
 

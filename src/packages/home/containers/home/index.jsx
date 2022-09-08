@@ -1,9 +1,7 @@
 import * as React from 'react';
 import { Navbar } from '../../../../core/components/navbar';
 
-interface HomeProps {}
-
-export const Home: React.FunctionComponent<HomeProps> = () => {
+export const Home = () => {
     return (
         <div>
             <Navbar />

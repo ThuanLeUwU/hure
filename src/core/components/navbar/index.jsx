@@ -4,15 +4,8 @@ import { BurgerBtn } from '../burger/burgerBtn';
 import { Button } from '../button/button';
 import NavBarStyles from './styles/navbar.module.scss';
 
-interface NavbarProps {}
-
-interface NavbarLinkProps {
-    name: string;
-    link: string;
-}
-
-export const Navbar: React.FunctionComponent<NavbarProps> = () => {
-    const [navbarLinks, setNavbarLinks] = React.useState<NavbarLinkProps[]>([
+export const Navbar = () => {
+    const [navbarLinks, setNavbarLinks] = React.useState([
         { name: 'Hure Platform', link: '/' },
         { name: 'Market', link: '/' },
         { name: 'Solutions', link: '/' },
@@ -22,11 +15,12 @@ export const Navbar: React.FunctionComponent<NavbarProps> = () => {
         { name: 'How it work', link: '/' },
         { name: 'Tokenomics', link: '/' },
     ]);
+
     return (
         <nav className={`${NavBarStyles.navbar}`}>
             <HureLogo />
             <div className={`${NavBarStyles.navbar__menu}`}>
-                <div className={`${NavBarStyles.navbar__menu__item}`}>
+                <div className={`${NavBarStyles.navbar__menu__item} hidden lg:block`}>
                     <ul className={`${NavBarStyles.links}`}>
                         {navbarLinks.map((link, index) => (
                             <li key={`link-${index}-${link.name}`} className={`${NavBarStyles.links__item}`}>

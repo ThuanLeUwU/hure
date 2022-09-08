@@ -3,7 +3,7 @@ import { FormProvider, UseFormReturn } from 'react-hook-form';
 
 import { useStoreApi } from '../../store';
 
-interface FormWrapperProps {
+interface FormWrapperProps extends React.PropsWithChildren {
     methods: UseFormReturn<any, any>;
     children?: React.ReactNode;
 }
