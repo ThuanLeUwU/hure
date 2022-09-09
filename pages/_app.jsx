@@ -16,9 +16,11 @@ function MyApp({ Component, pageProps }) {
             <Provider store={store}>
                 <GetCurrentUserWrapper>
                     <BurgerContextProvider>
-                        <Navbar />
-                        <Component {...pageProps} />
-                        <BurgerLink />
+                        <div className="relative">
+                            <Navbar />
+                            <Component {...pageProps} />
+                            <BurgerLink />
+                        </div>
                     </BurgerContextProvider>
                 </GetCurrentUserWrapper>
             </Provider>
