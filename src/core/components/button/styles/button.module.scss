@@ -40,4 +40,16 @@
         border-right-width: 0px;
         z-index: -1;
     }
+
+    &_m {
+        padding: 8px 16px !important;
+    }
+
+    &_primary {
+        padding: 16px 24px !important;
+    }
+
+    &_w_full {
+        width: 100%;
+    }
 }
