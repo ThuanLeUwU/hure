@@ -6,7 +6,7 @@ import { HureLogo } from '../../resources/logo';
 import { Button } from '../button/button';
 
 export function BurgerLink() {
-    const { isActive } = useBurgerContext();
+    const { isActive, handleSetIsActive } = useBurgerContext();
     const [tabLinks, setTabLinks] = React.useState([
         { name: 'Hure Platform', link: '/' },
         { name: 'Solutions', link: '/' },
@@ -15,11 +15,11 @@ export function BurgerLink() {
         { name: 'Tokenomics', link: '/' },
     ]);
 
-    return isActive ? (
+    return (
         <div className={`${burgerLinkStyles.absolute}`}>
-            <div className={`${burgerLinkStyles.tab} flex lg:hidden`}>
+            <div className={`${burgerLinkStyles.tab} flex lg:hidden ${isActive ? burgerLinkStyles.tab_active : burgerLinkStyles.tab_inactive}`}>
                 <div className={`${burgerLinkStyles.tab__close}`}>
-                    <button className={`${burgerLinkStyles.tab__close__button}`}>
+                    <button className={`${burgerLinkStyles.tab__close__button}`} onClick={() => handleSetIsActive()}>
                         <span className={`${burgerLinkStyles.tab__close__button_line}`}></span>
                     </button>
                 </div>
@@ -29,7 +29,11 @@ export function BurgerLink() {
                 <div className={`${burgerLinkStyles.tab__item}`}>
                     <ul className={`${burgerLinkStyles.tab__links}`}>
                         {tabLinks.map((link, index) => (
-                            <li key={`tab-link-${index}-${link.name}`} className={`${burgerLinkStyles.tab__links__item}`}>
+                            <li
+                                key={`tab-link-${index}-${link.name}`}
+                                className={`${burgerLinkStyles.tab__links__item}`}
+                                onClick={() => handleSetIsActive()}
+                            >
                                 {link.name}
                             </li>
                         ))}
@@ -42,7 +46,5 @@ export function BurgerLink() {
                 </div>
             </div>
         </div>
-    ) : (
-        <></>
     );
 }
