@@ -1,14 +1,14 @@
 import * as React from 'react';
-import HumanRealistic from '../../../../core/components/humanRealistic';
-import { Navbar } from '../../../../core/components/navbar';
-import { OurMissionVision } from '../../../../core/components/OurMissionVision';
+import { Banner } from '../../components/banner';
+import { HumanRealistic } from '../../components/humanRealistic';
+import { OurMissionVision } from '../../components/ourMissionVision';
 
 export const Home = () => {
     return (
         <div>
-            <Navbar />
-            <HumanRealistic/>
-            <OurMissionVision/>
+            <Banner />
+            <HumanRealistic />
+            <OurMissionVision />
         </div>
     );
 };

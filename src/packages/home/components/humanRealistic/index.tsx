@@ -4,7 +4,7 @@ import HumanRealisticStyles from './styles/HumanRealistic.module.scss';
 import background from '../../../../public/asset/images/background.jpg';
 interface HumanRealisticProps {}
 
-const HumanRealistic: React.FunctionComponent<HumanRealisticProps> = () => {
+export const HumanRealistic: React.FunctionComponent<HumanRealisticProps> = () => {
     return (
         <section className={`${HumanRealisticStyles.section}`}>
             <div className={`${HumanRealisticStyles.container}`}>
@@ -36,5 +36,3 @@ const HumanRealistic: React.FunctionComponent<HumanRealisticProps> = () => {
         </section>
     );
 };
-
-export default HumanRealistic;
