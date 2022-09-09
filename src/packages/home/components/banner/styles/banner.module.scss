@@ -2,14 +2,14 @@ $text-highlight: rgb(23, 221, 208);
 .section {
     box-sizing: border-box;
     // flex-shrink: 0;
-    flex:1 1 0%;
+    flex: 1 1 0%;
     width: 100%;
-    height: 995px;
+    height: 994px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 140px 0px 119px 0px;
+    padding: 140px 0px 120px 0px;
     background: radial-gradient(
         50% 50% at 50% 6810000000000001%,
         rgba(23, 221, 208, 0.12) 0%,
@@ -87,7 +87,7 @@ $text-highlight: rgb(23, 221, 208);
     text-align: center;
     text-shadow: 0px 32px 12px rgba(0, 0, 0, 0.24);
     height: auto;
-    font-size: 92px;
+    font-size: 84px;
     color: #ebfdff;
     text-transform: capitalize;
     font-weight: bold;
@@ -111,26 +111,27 @@ $text-highlight: rgb(23, 221, 208);
     z-index: 1;
     line-height: 1.2;
     position: absolute;
-    margin: 928px 675px 24px 675px;
+    margin: 928px 676px 24px 676px;
     color: #ebfdff;
     font-weight: 700;
+    cursor: pointer;
 }
 .image {
     flex-shrink: 0;
-    width: 551px;
-    height: 533px;
+    width: 550px;
+    height: 532px;
     overflow: visible;
     background-image: url('./../../../../../../public/asset/images/human1.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
-    // transform: perspective(1200px) translateX(0px) translateY(0px) scale(1) rotate(0deg) rotateX(0deg) rotateY(0deg) translateZ(0px);
+    transform: perspective(1200px) translateX(0px) translateY(0px) scale(1) rotate(0deg) rotateX(0deg) rotateY(0deg) translateZ(0px);
     margin: 460px 300px 0 570px;
 }
 .image2 {
     flex-shrink: 0;
-    width: 383px;
+    width: 382px;
     height: 484px;
     overflow: visible;
     background-image: url('./../../../../../../public/asset/images/human2.webp');
@@ -138,13 +139,13 @@ $text-highlight: rgb(23, 221, 208);
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
-    margin: 480px 690px 30px 375px;
+    margin: 480px 690px 30px 376px;
 }
 
 .texthighlight {
     color: $text-highlight;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .section {
         height: 860px;
     }
@@ -162,19 +163,19 @@ $text-highlight: rgb(23, 221, 208);
     }
     .image {
         width: 474px;
-        height: 459px;
+        height: 460px;
         margin: 400px 100px 0px 240px;
     }
     .image2 {
-        width: 341px;
-        height: 431px;
+        width: 340px;
+        height: 430px;
         margin: 400px 320px 30px 150px;
     }
     .scrollmore {
-        margin: 780px 675px 24px 675px;
+        margin: 780px 675px 24px 676px;
     }
 }
-@media (max-width: 400px) {
+@media (max-width: 640px) {
     .section {
         height: 800px;
     }
@@ -202,6 +203,6 @@ $text-highlight: rgb(23, 221, 208);
         margin: 350px 90px 30px 4px;
     }
     .scrollmore {
-        margin: 740px 675px 24px 675px;
+        margin: 740px 676px 24px 676px;
     }
 }
