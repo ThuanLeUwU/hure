@@ -1,0 +1,67 @@
+.ourMissionVision{
+    box-sizing: border-box;
+    width: auto;
+    flex-shrink: 0;
+    height: min-content; /* 999px */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0px 80px 0px;
+    background: linear-gradient(0deg, var(--BG_1, #0c151d) /* {"name":"BG 1"} */ 0%, var(--BG_4, rgb(27, 47, 65)) /* {"name":"BG 4"} */ 100%);
+    overflow: hidden;
+    flex: 1 0 0px;
+    position: relative;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 10;
+    background-image: url("https://framerusercontent.com/modules/bpm3xOeqqHQ3FyegZt02/1itw2djUH4ANqTTONonp/assets/VIeDzqRwblCSq1bmzkKOYkeC98.jpg");
+    background-color: #cccccc;
+}
+.OurMissionVisionWrapper{
+    text-align: center;
+    flex-shrink: 0;
+    height: auto; /* 67px */
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-word;
+    flex: 1 0 0px;
+    position: relative;
+    text-shadow: 0px 24px 12px rgba(0, 0, 0, 0.48);
+    color: var(--Blue, #17ddd0);
+    line-height: 1.2;
+}
+.tittle_missionvision{
+    color: #17DDD0;
+}
+.tittle_content_missionvision{
+    color: #EBFDFF;
+    margin: 0px 0px 60px 0px;
+
+}
+.frame_hure{
+    width: 40%;
+}
+.tittle_hure{
+    color: #EBFDFF;
+    flex-shrink: 0;
+    width: auto;
+    height: auto;
+    white-space: pre;
+    position: relative;
+    line-height: 1.2;
+}
+.content_hure{
+    color: #EBFDFF;
+    flex-shrink: 0;
+    // width: 1px;
+    height: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-word;
+    flex: 1 0 0px;
+    position: relative;
+    opacity: 0.7;
+    line-height: 1.2;
+    
+}
