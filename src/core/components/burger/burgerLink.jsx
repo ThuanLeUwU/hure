@@ -16,7 +16,7 @@ export function BurgerLink() {
     ]);
 
     return (
-        <div className={`${burgerLinkStyles.absolute}`}>
+        <div className={`${burgerLinkStyles.absolute} ${isActive ? burgerLinkStyles.absolute_active : burgerLinkStyles.absolute_inactive}`}>
             <div className={`${burgerLinkStyles.tab} flex lg:hidden ${isActive ? burgerLinkStyles.tab_active : burgerLinkStyles.tab_inactive}`}>
                 <div className={`${burgerLinkStyles.tab__close}`}>
                     <button className={`${burgerLinkStyles.tab__close__button}`} onClick={() => handleSetIsActive()}>
@@ -45,6 +45,7 @@ export function BurgerLink() {
                     </Button>
                 </div>
             </div>
+            {isActive && <div className={`${burgerLinkStyles.dark_screen}`}></div>}
         </div>
     );
 }
