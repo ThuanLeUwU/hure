@@ -37,7 +37,7 @@
     }
 
     .lg\:hidden {
-        display: none;
+        display: none !important;
     }
 }
 
@@ -61,4 +61,21 @@
 
 .absolute {
     position: absolute;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.w-full {
+    width: 100%;
 }

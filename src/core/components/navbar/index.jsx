@@ -18,22 +18,24 @@ export const Navbar = () => {
 
     return (
         <nav className={`${NavBarStyles.navbar}`}>
-            <HureLogo />
-            <div className={`${NavBarStyles.navbar__menu}`}>
-                <div className={`${NavBarStyles.navbar__menu__item} hidden lg:block`}>
-                    <ul className={`${NavBarStyles.links}`}>
-                        {navbarLinks.map((link, index) => (
-                            <li key={`link-${index}-${link.name}`} className={`${NavBarStyles.links__item}`}>
-                                {link.name}
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-                <div className={`${NavBarStyles.navbar__menu__item} hidden sm:block`}>
-                    <Button>Connect Wallet</Button>
-                </div>
-                <div className={`${NavBarStyles.navbar__menu__item} block lg:hidden`}>
-                    <BurgerBtn />
+            <div className="container flex justify-between w-full">
+                <HureLogo />
+                <div className={`${NavBarStyles.navbar__menu}`}>
+                    <div className={`${NavBarStyles.navbar__menu__item} hidden lg:block`}>
+                        <ul className={`${NavBarStyles.links}`}>
+                            {navbarLinks.map((link, index) => (
+                                <li key={`link-${index}-${link.name}`} className={`${NavBarStyles.links__item}`}>
+                                    {link.name}
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                    <div className={`${NavBarStyles.navbar__menu__item} hidden sm:block`}>
+                        <Button>Connect Wallet</Button>
+                    </div>
+                    <div className={`${NavBarStyles.navbar__menu__item} block lg:hidden`}>
+                        <BurgerBtn />
+                    </div>
                 </div>
             </div>
         </nav>
